@@ -1,33 +1,22 @@
-\documentclass[11pt]{scrartcl}
+\documentclass[11pt]{scrartcl}% use koma-script article class, 11 point text
 \usepackage{geometry}                % See geometry.pdf to learn the layout options. There are lots.
 \geometry{a4paper}                   % ... or a4paper or a5paper or ... 
 
-\usepackage{natbib}
-\bibliographystyle{apalike}
-\setcitestyle{notesep={:},round,aysep={,},yysep={;}}
+\usepackage{natbib}%use natbib citation/reference style
+\bibliographystyle{apalike}%use apalike bibliography style
+\setcitestyle{notesep={:},round,aysep={,},yysep={;}}%set punctutation for citations
 
-\usepackage{graphicx}
-\usepackage{epstopdf}
+\usepackage{graphicx}%use bitmap images
+\usepackage{epstopdf}%use eps images
 
-\usepackage{todo}
-\usepackage{textcomp}
+\usepackage{todo}%add ToDo reminders/comments
+\usepackage{textcomp}%useful for various texty extras
 
 \usepackage{tabulary}% necess for MMD - tables
 \usepackage{booktabs}% necess for MMD - tables
 \usepackage{hyperref}% necess for MMD - Xref system
+\usepackage{xspace}% automatic control of spaces after user-defined commands
 
-\usepackage{xspace}
-\newcommand{\hb}{\emph{hanbaiten}\xspace}
-\newcommand{\og}{\emph{oshigami}\xspace}
-\newcommand{\crs}{\emph{chirashi}\xspace}
-\newcommand{\ty}{\textyen}
-
-%%%create CJK cmd and env for Japanese text%%%%%%%%%%%%%%
-\usepackage{fontspec}
- \defaultfontfeatures{Scale=MatchLowercase}
-\newenvironment{CJK}{\fontspec[Scale=0.9]{Hiragino Mincho Pro}}{}
-\newcommand{\cjk}[1]{{\fontspec[Scale=0.9]{Hiragino Mincho Pro}#1}}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `dirname #1`/`basename #1 .tif`.png}
 
