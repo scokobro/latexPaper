@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<SearchIndexes Version="1.0">
+    <Documents>
+        <Document ID="32">
+            <Title>Enum List</Title>
+            <Text>
+1. Item1
+2. Item2
+3. Item3
+4. Item4
+
+</Text>
+        </Document>
+        <Document ID="25">
+            <Title>PARAGRAPH</Title>
+            <Synopsis>should be compiled ‘As-Is’ to avoid getting headings, unless you actually want a headed paragraph that is.</Synopsis>
+            <Text>This is a single paragraph - this is not titles or numbered. The As-Is box should be checked unless you want to use the title.</Text>
+        </Document>
+        <Document ID="18">
+            <Title>CITEP</Title>
+            <Synopsis>standard natbib bracketed citation</Synopsis>
+            <Text>[post][#CiteKey]
+
+[post\]\[pre][#CiteKey]
+</Text>
+            <Notes>TO ADD
+
+[#citekey]    => ~\citep{citekey}
+[#citekey][]  => ~\citep{citekey}
+[foo][#citekey] => ~\citep[foo]{citekey}
+[foo\]\[bar][#citekey] => ~\citep[foo][bar]{citekey}
+
+[#citekey;]    => \citet{citekey}
+[#citekey;][]  => \citet{citekey}
+[foo][#citekey;] => \citet[foo]{citekey}
+[foo\]\[bar][#citekey;] => \citet[foo][bar]{citekey}
+</Notes>
+        </Document>
+        <Document ID="10">
+            <Title>References</Title>
+            <Synopsis>replace the orange highlighted bit with the UNIX path to your bibliography, don’t include the .bib file extension.</Synopsis>
+            <Text>&lt;!--\bibliography{/Users/spkb/Documents/Bibliographies/mybib}--></Text>
+        </Document>
+        <Document ID="26">
+            <Title>SUBSECTION</Title>
+            <Text>This is the first subsection of section three. You get the picture by now!</Text>
+        </Document>
+        <Document ID="19">
+            <Title>CITET</Title>
+            <Synopsis>Textual citation: as citep but CiteKey is followed by a semi-colon</Synopsis>
+            <Text>[post][#CiteKey;]
+
+[post\]\[pre][#CiteKey;]
+</Text>
+        </Document>
+        <Document ID="11">
+            <Title>SECTION TWO</Title>
+            <Text>This is some text in section two.</Text>
+        </Document>
+        <Document ID="27">
+            <Title>LABEL</Title>
+            <Synopsis>label in some arbitrary place that has no heading or caption.</Synopsis>
+            <Text>&lt;!--\label{Label}--></Text>
+        </Document>
+        <Document ID="12">
+            <Title>SECTION THREE</Title>
+            <Text>This is section three.</Text>
+        </Document>
+        <Document ID="28">
+            <Title>JPNZ</Title>
+            <Text>«j日本語«</Text>
+        </Document>
+        <Document ID="20">
+            <Title>Def List</Title>
+            <Synopsis>code for a definition list</Synopsis>
+            <Text>TERM
+: definition</Text>
+        </Document>
+        <Document ID="13">
+            <Title>SUBSECTION</Title>
+            <Text>This is the first subsection of section two.</Text>
+        </Document>
+        <Document ID="3">
+            <Title>SECTION ONE</Title>
+            <Text>The start of the first section of the paper - this is section 1. The title of this document becomes the heading - in LaTeX terms what goes in the section command.
+
+![A room from *Century of the Self*][room1]
+
+[room1]: /Users/spkb/Desktop/rm4.jpg width=100px height=100px
+
+</Text>
+        </Document>
+        <Document ID="29">
+            <Title>LABEL</Title>
+            <Text>«lLabel«</Text>
+        </Document>
+        <Document ID="14">
+            <Title>Code</Title>
+        </Document>
+        <Document ID="4">
+            <Title>SUBSECTION</Title>
+            <Text>This is the first subsection of section one.</Text>
+        </Document>
+        <Document ID="21">
+            <Title>NotCited</Title>
+            <Synopsis>add a work to the bibliography that is not cited in the text</Synopsis>
+            <Text>[Not cited][#CiteKey]
+</Text>
+        </Document>
+        <Document ID="22">
+            <Title>Prototype table</Title>
+            <Synopsis>requires paackges - booktabs, tabulary</Synopsis>
+            <Text>|             |        Grouping             ||
+First Header  | Second Header | Third Header |
+------------  | :-----------: | -----------: |
+Content       |   *Long Cell*               ||
+Content       | cell          | **cell**     |
+
+New section   |          more |         data |
+And more      |         and yet more        || 
+[Caption][Label]
+</Text>
+            <Notes>Looks like this when processed
+￼
+
+Note position in colons in line after headers
+two colons -> align centre
+one colon on right -> align right</Notes>
+        </Document>
+        <Document ID="15">
+            <Title>IMAGE</Title>
+            <Synopsis>code to insert an image from an external file</Synopsis>
+            <Text>![Caption][Label]
+
+[Label]: pathtofigure width=Npx height=Mpx</Text>
+        </Document>
+        <Document ID="5">
+            <Title>SUBSUBSEC</Title>
+            <Text>This is the first subsubsection of subsection one of section one! To stop it being given a number when compiled in LaTeX, tick the As-Is box in General settings in the Inspector.</Text>
+        </Document>
+        <Document ID="6">
+            <Title>Abstract</Title>
+            <Synopsis>section sign is opt6
+orange highlighted parts replaced by MMD+latex code during compilation</Synopsis>
+            <Text>§abstract§
+Write your abstract in here. Leave the orange stuff as it is!
+§end-abstract§</Text>
+        </Document>
+        <Document ID="30">
+            <Title>Raw Latex Commands</Title>
+        </Document>
+        <Document ID="23">
+            <Title>Xref</Title>
+            <Synopsis>this is used to generate a autoref{} command in the LaTeX document - use it where you would put a \ref{} or \pageref{} </Synopsis>
+            <Text>[](#Label)
+</Text>
+            <Notes>The default names for each of the featured referenced is  as follows:
+
+\figurename
+Figure
+\tablename
+Table
+\partname
+Part
+\appendixname
+Appendix
+\equationname
+Equation
+\Itemname
+item
+\chaptername
+chapter
+\sectionname
+section
+\subsectionname
+subsection
+\subsubsectionname
+subsubsection
+\paragraphname
+paragraph
+\Hfootnotename
+footnote
+\AMSname
+Equation
+\theoremname
+Theorem
+\page
+
+these can of course be adjusted to suite your needs.
+page</Notes>
+        </Document>
+        <Document ID="16">
+            <Title>JAPANESE</Title>
+            <Synopsis>code for CJK environment
+
+Japanese text MUST be prefixed by «j and finish with «
+those are guillemets, option-\ </Synopsis>
+            <Text>&lt;!--\cjk{JPNZ}-->
+</Text>
+        </Document>
+        <Document ID="31">
+            <Title>Item List</Title>
+            <Text>
+* Item1
+* Item2
+* Item3
+* Item4
+
+</Text>
+        </Document>
+        <Document ID="24">
+            <Title>SUBSUBSEC</Title>
+            <Text>Second subsection of section one.</Text>
+        </Document>
+    </Documents>
+</SearchIndexes>

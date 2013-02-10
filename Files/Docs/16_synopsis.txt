@@ -1,0 +1,4 @@
+code for CJK environment
+
+Japanese text MUST be prefixed by «j and finish with «
+those are guillemets, option-\ 
