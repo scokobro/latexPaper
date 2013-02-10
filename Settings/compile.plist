@@ -408,7 +408,7 @@ p.shot {text-align:left; text-indent:0; margin: 12pt 0pt 0pt 0pt; text-transform
 	<array>
 		<dict>
 			<key>data</key>
-			<string>/Users/spkb/Desktop/Scriv-LaTex/preamble</string>
+			<string>UNIX PATH TO THE PREAMBLE FILE</string>
 			<key>key</key>
 			<string>latex input</string>
 		</dict>
@@ -420,19 +420,19 @@ p.shot {text-align:left; text-indent:0; margin: 12pt 0pt 0pt 0pt; text-transform
 		</dict>
 		<dict>
 			<key>data</key>
-			<string>Watershed</string>
+			<string>YOUR WORK'S TITLE</string>
 			<key>key</key>
 			<string>Title</string>
 		</dict>
 		<dict>
 			<key>data</key>
-			<string>ScottKB</string>
+			<string>AUTHOR'S NAME</string>
 			<key>key</key>
 			<string>Author</string>
 		</dict>
 		<dict>
 			<key>data</key>
-			<string>mybib</string>
+			<string>NAME OF YOUR BIBTEX FILE - WITHOUT .bib EXTENSION</string>
 			<key>key</key>
 			<string>BibTeX</string>
 		</dict>
