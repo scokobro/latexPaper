@@ -1,0 +1,39 @@
+\documentclass[11pt]{scrartcl}
+\usepackage{geometry}                % See geometry.pdf to learn the layout options. There are lots.
+\geometry{a4paper}                   % ... or a4paper or a5paper or ... 
+
+\usepackage{natbib}
+\bibliographystyle{apalike}
+\setcitestyle{notesep={:},round,aysep={,},yysep={;}}
+
+\usepackage{graphicx}
+\usepackage{epstopdf}
+
+\usepackage{todo}
+\usepackage{textcomp}
+
+\usepackage{tabulary}% necess for MMD - tables
+\usepackage{booktabs}% necess for MMD - tables
+\usepackage{hyperref}% necess for MMD - Xref system
+
+\usepackage{xspace}
+\newcommand{\hb}{\emph{hanbaiten}\xspace}
+\newcommand{\og}{\emph{oshigami}\xspace}
+\newcommand{\crs}{\emph{chirashi}\xspace}
+\newcommand{\ty}{\textyen}
+
+%%%create CJK cmd and env for Japanese text%%%%%%%%%%%%%%
+\usepackage{fontspec}
+ \defaultfontfeatures{Scale=MatchLowercase}
+\newenvironment{CJK}{\fontspec[Scale=0.9]{Hiragino Mincho Pro}}{}
+\newcommand{\cjk}[1]{{\fontspec[Scale=0.9]{Hiragino Mincho Pro}#1}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `dirname #1`/`basename #1 .tif`.png}
+
+\title{Brief Article}%TITLE OF PAPER
+\author{The Author}%AUTHOR oF PAPER
+\date{}%LEAVE BLANK FOR TODAY'S DATE
+
+\begin{document}
+\maketitle
